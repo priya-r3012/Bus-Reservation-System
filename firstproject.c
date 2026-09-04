@@ -79,21 +79,21 @@ void registration()
     } while (!valid_name(reg_name));
 
     do {
-        printf("Enter mobile number: ");
+        printf("Enter your mobile number: ");
         scanf("%s", reg_mobile);
         if (!valid_mobile(reg_mobile))
             printf("Invalid mobile number! Number should be 10 digits\n");
     } while (!valid_mobile(reg_mobile));
 
     do {
-        printf("Enter email: ");
+        printf("Enter your email: ");
         scanf("%s", reg_email);
         if (!validEmail(reg_email))
             printf("Invalid email format!\n");
     } while (!validEmail(reg_email));
 
     do {
-        printf("Enter password (8 - 15 chars): ");
+        printf("Enter your password (8 - 15 chars): ");
         scanf("%s", reg_password);
         if (!validPassword(reg_password))
             printf("Password must be 8 - 15 characters!\n");
@@ -108,11 +108,11 @@ int login()
 
     printf("\n--- LOGIN ---\n");
     printf("\nLogin with your email & password");
-    printf("Enter email: ");
+    printf("Enter your email: ");
     scanf("%s", email);
 if (strcmp(reg_email, email)==0)
 {
-    printf("Enter password: ");
+    printf("Enter your password: ");
     scanf("%s", pass);
     return 1;
 }
